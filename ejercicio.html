@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <p>hola</p>
-    <br>
-    <b>texto en negrita</b><br>
-    <i>texto en cursiva</i><br>
-    <s>texto tachado</s><br>
-    <i>diego esta en las playas de bolivia</i><br>
-    <small>diego esta en bolivia</small><br>
-    <p>x<sub>2</sub> y x<sup>3</sup></p>
-    <mark>diego no le gusta bolivia</mark><br>
-    "Pequeña Cita"<br>
-    17:34<br>
-    <p><i>titulo en cursiva</i></p>
-    <p><center>viva bolivia</center></p>
-    <i>mfernanda</i><br>
-    <i>Vedruna.org</i>
-    <p>Sevilla</p>
-    <p>hola</p>
-    <p>Adios</p>
-    
-
-
-
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header>
+        </header>
+        <form action="respuesta.html">
+        <fieldset>
+            <label for="nombre">Nombre</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required minlength="2" maxlength="50"><br>
+            <label for="apellidos">Apellidos</label><br>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos" required minlength="2" maxlength="100"><br>
+            <label for="correo_electronico">Correo Electronico</label><br>
+            <input type="email" id="correo_electronico" name="correo_electronico" placeholder="Mi.correo@electronico.com" required minlength="2" maxlength="50"><br>
+            <label for="contraseña">Contraseña</label><br>
+            <input type="password" id="contraseña" name="contraseña" minlength="2" maxlength="50"><br>
+            <label for="telefono">Teléfono</label><br>
+            <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono" pattern="[0-9+ ]{9,15}"><br>
+            <label for="url">Pagina Web</label><br>
+            <input type="url" id="url" name="url" placeholder="www.direccion.com"><br>
+            <label for="edad">Edad</label><br>
+            <input type="number" id="edad" name="edad" placeholder="Tu edad" min="18" max="100"><br>
+            <label for="fecha">Fecha</label><br>
+            <input type="date" id="fecha" name="fecha" min="1900-01-01" max="2025-12-31"><br>
+            <label for="time">Hora</label><br>
+            <input type="time" id="hora" name="hora" min="00:00" max="23:59"><br>
+         </fieldset>
+    </form>
+    </body>
 </html>
-
 
 
 
