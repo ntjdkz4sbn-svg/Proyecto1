@@ -2,18 +2,21 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header>
+            Titulo 
         </header>
         <form action="respuesta.html">
         <fieldset>
+            <legend> Formulario de contacto </legend>
             <label for="nombre">Nombre</label><br>
             <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required minlength="2" maxlength="50"><br>
             <label for="apellidos">Apellidos</label><br>
             <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos" required minlength="2" maxlength="100"><br>
-            <label for="correo_electronico">Correo Electronico</label><br>
-            <input type="email" id="correo_electronico" name="correo_electronico" placeholder="Mi.correo@electronico.com" required minlength="2" maxlength="50"><br>
+            <label for="email">Correo Electronico</label><br>
+            <input type="email" id="email" name="correo_electronico" placeholder="Mi.correo@electronico.com" required minlength="2" maxlength="50"><br>
             <label for="contraseña">Contraseña</label><br>
             <input type="password" id="contraseña" name="contraseña" minlength="2" maxlength="50"><br>
             <label for="telefono">Teléfono</label><br>
@@ -25,7 +28,16 @@
             <label for="fecha">Fecha</label><br>
             <input type="date" id="fecha" name="fecha" min="1900-01-01" max="2025-12-31"><br>
             <label for="time">Hora</label><br>
-            <input type="time" id="hora" name="hora" min="00:00" max="23:59"><br>
+            <input type="time" id="time" name="time" min="00:00" max="23:59"><br>
+         </fieldset>
+         <fieldset> 
+            <legend>Elige el metodo de contacto</legend>
+            <input type="radio" id="contacto_email" name="contacto" value="email">
+            <label for="contacto_email">Email</label><br>
+            <input type="radio" id="contacto_telefono" name="contacto" value="telefono">
+            <label for="contacto_telefono">Teléfono</label><br>
+            <input type="radio" id="contacto_postal" name="contacto" value="postal">
+            <label for="contacto_postal">Correo Postal</label><br>
          </fieldset>
     </form>
     </body>
