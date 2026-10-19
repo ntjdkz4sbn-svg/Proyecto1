@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(139, 92, 246, 0.35), transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(236, 72, 153, 0.25), transparent 40%),
+        radial-gradient(circle at 60% 10%, rgba(59, 130, 246, 0.25), transparent 40%),
+        #0f0f1a;
+    background-attachment: fixed;
+
+}
+header {
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+legend {
+    /* Texto */
+    color: white;
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px darkgreen;
+
+    /* Fondo */
+    background-color: seagreen;
+    opacity: 0.95;
+
+    /* Espaciado */
+    padding: 12px 25px;
+    margin: 10px;
+    
+    /* Bordes */
+    border: 3px solid darkgreen;
+    border-radius: 15px;
+    border-bottom: 5px solid limegreen;
+    outline: 2px solid lightgreen;
+    outline-offset: 3px;
+
+    /* Sombra y tamaño */
+    box-shadow: 4px 4px 10px gray;
+    min-width: 150px;
+    max-width: 400px;
+
+    /* Presentación */
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el ratón */
+legend:hover {
+    background-color: darkgreen;
+    color: lightgreen;
+    box-shadow: 6px 6px 15px gray;
+    transform: scale(1.05);
+}
