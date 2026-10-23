@@ -1,0 +1,135 @@
+
+/* ESTILO GENERAL */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f8fc;
+    color: #263746;
+}
+
+/* CABECERA */
+header {
+    background-color: #b8ddeb;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    color: #145374;
+    font-size: 38px;
+}
+
+h2 {
+    color: #145374;
+}
+
+h3 {
+    color: #237c91;
+}
+
+/* MENÚ */
+nav {
+    background-color: #145374;
+    padding: 12px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #b8ddeb;
+}
+
+/* CONTENIDO */
+main {
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 15px;
+}
+
+/* PESTAÑAS */
+.pestana {
+    background-color: white;
+    border: 1px solid #c5dfe9;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.pestana label {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #145374;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pestana input:checked + label {
+    background-color: #145374;
+    color: white;
+    border-radius: 5px;
+}
+
+.contenido {
+    display: none;
+    padding: 15px;
+}
+
+/* Mostrar la pestaña seleccionada */
+.pestana input:checked ~ .contenido {
+    display: block;
+}
+
+/* IMÁGENES */
+.imagen {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* TARJETAS DE DESTINOS */
+.tarjeta {
+    background-color: #eaf5fa;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+.tarjeta img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: #145374;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ADAPTACIÓN A MÓVILES */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
