@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de contacto</title>
+  <link rel="stylesheet" href="styleForm.css">
+</head>
+<body>
+
+  <h1>Formulario de Contacto</h1>
+
+  <form action="#" method="post">
+
+    <input
+      type="text"
+      id="nombre"
+      name="nombre"
+      placeholder="Nombre"
+      maxlength="40"
+      pattern="[A-Za-z]{1,40}"
+      title="Solo letras (mayúsculas y minúsculas), máximo 40 caracteres"
+      required
+      autofocus>
+
+    <input
+      type="text"
+      id="cp"
+      name="cp"
+      placeholder="Código postal"
+      maxlength="5"
+      pattern="[0-9]{5}"
+      inputmode="numeric"
+      title="Exactamente 5 dígitos numéricos"
+      required>
+
+    <input
+      type="text"
+      id="edad"
+      name="edad"
+      placeholder="Edad"
+      maxlength="2"
+      pattern="[0-9]{2}"
+      inputmode="numeric"
+      title="Solo dos dígitos numéricos"
+      required>
+
+    <input type="submit" value="ENVIAR">
+
+  </form>
+
+</body>
+</html>

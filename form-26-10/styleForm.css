@@ -1,0 +1,91 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin: 0 0 20px;
+}
+
+/* Formulario en horizontal */
+form {
+  display: flex;
+  flex-wrap: wrap;          /* en pantallas pequeñas pasa a varias líneas */
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Campos */
+input[type="text"] {
+  flex: 1 1 150px;          /* crecen de forma equilibrada */
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #b5bcc4;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]::placeholder {
+  color: #8a929b;
+}
+
+/* Foco */
+input[type="text"]:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
+}
+
+/* Validación (solo tras interactuar con el campo) */
+input[type="text"]:user-invalid {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
+}
+
+input[type="text"]:user-valid {
+  border-color: #16a34a;
+}
+
+/* Botón */
+input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #2563eb;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+input[type="submit"]:hover {
+  background-color: #1d4ed8;
+}
+
+input[type="submit"]:active {
+  transform: scale(0.97);
+}
+
+/* Móvil: campos y botón a todo el ancho */
+@media (max-width: 600px) {
+  input[type="text"],
+  input[type="submit"] {
+    flex: 1 1 100%;
+  }
+}
