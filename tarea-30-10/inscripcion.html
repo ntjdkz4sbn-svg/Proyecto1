@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inscripción al curso de informática</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <main class="contenedor">
+    <header class="cabecera">
+      <h1>Inscripción a los cursos de informática</h1>
+      <p>Rellena el formulario para reservar tu plaza. Los campos marcados con * son obligatorios.</p>
+    </header>
+
+    <form action="confirmacion.html" method="get">
+
+      <fieldset>
+        <legend>Datos personales</legend>
+
+        
+          <label for="nombre">Nombre y apellidos *</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej.: Marta Te Amo" required>
+        
+
+          <label for="email">Correo electrónico *</label>
+          <input type="email" id="email" name="email" placeholder="marta.minovia@ejemplo.com" required>
+        
+        
+          <label for="nacimiento">Fecha de nacimiento</label>
+          <input type="date" id="nacimiento" name="nacimiento">
+        
+        
+          <span class="etiqueta">Sexo</span>
+          
+            <label for="sexo-mujer"><input type="radio" id="sexo-mujer" name="sexo" value="mujer"> Mujer</label>
+            <label for="sexo-hombre"><input type="radio" id="sexo-hombre" name="sexo" value="hombre"> Hombre</label>
+            <label for="sexo-otro"><input type="radio" id="sexo-otro" name="sexo" value="otro"> Otro / Prefiero no decirlo</label>
+          
+        
+      </fieldset>
+
+      <fieldset>
+        <legend>Tu curso</legend>
+
+        
+          <label for="curso">Curso al que te inscribes</label>
+          <select id="curso" name="curso">
+            <option value="">Selecciona un curso…</option>
+            <option value="ofimatica">Ofimática</option>
+            <option value="programacion">Programación básica</option>
+            <option value="web">Diseño web</option>
+            <option value="redes">Redes y seguridad</option>
+          </select>
+        
+
+        
+          <span class="etiqueta">Aficiones o intereses</span>
+          <div class="opciones">
+            <label for="af-videojuegos"><input type="checkbox" id="af-videojuegos" name="aficiones" value="videojuegos"> Videojuegos</label>
+            <label for="af-robotica"><input type="checkbox" id="af-robotica" name="aficiones" value="robotica"> Robótica</label>
+            <label for="af-fotografia"><input type="checkbox" id="af-fotografia" name="aficiones" value="fotografia"> Fotografía</label>
+            <label for="af-musica"><input type="checkbox" id="af-musica" name="aficiones" value="musica"> Música</label>
+         
+
+        
+          <label for="comentarios">Comentarios</label>
+          <textarea id="comentarios" name="comentarios" rows="5" placeholder="Espacio para alguna duda o sugerencia..."></textarea>
+        
+      </fieldset>
+
+      
+        <button type="submit" class="boton-enviar">Enviar inscripción</button>
+        <button type="reset" class="boton-borrar">Borrar formulario</button>
+      
+
+    </form>
+  </main>
+</body>
+</html>

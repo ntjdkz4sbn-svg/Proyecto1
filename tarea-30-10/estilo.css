@@ -1,0 +1,172 @@
+/* Hoja de estilo – Formulario de inscripción */
+
+* {
+  box-sizing: border-box;
+}
+
+/* ---------- Página (body) ---------- */
+body {
+  margin: 0;
+  padding: 2rem 1rem;
+  background-color: #cdbe9a;
+  color: #6d5d3c;
+  font-family: "Trebuchet MS", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* ---------- Formulario centrado ---------- */
+.contenedor {
+  max-width: 640px;          /* ancho máximo */
+  margin: 0 auto;            /* centrado horizontal */
+  padding: 2rem;             /* margen interno */
+  background-color: #ede7a6;
+  border: 1px solid #d3c6a6;
+  border-radius: 12px;       /* bordes redondeados */
+  box-shadow: 0 6px 20px rgba(80, 60, 20, 0.15);
+}
+
+.cabecera h1 {
+  margin: 0 0 0.5rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.7rem;
+  line-height: 1.25;
+  color: #1f4338;
+}
+
+.cabecera p {
+  margin: 0 0 1.5rem;
+  color: #0091f2;
+}
+
+fieldset {
+  margin: 0 0 1.5rem;
+  padding: 1rem 1.25rem 0.5rem;
+  border: 1px solid #d3c6a6;
+  border-radius: 8px;
+}
+
+legend {
+  padding: 0 0.5rem;
+  font-weight: 700;
+  color: #ff00ea;
+}
+
+.campo {
+  margin-bottom: 1.1rem;
+}
+
+/* ---------- Etiquetas (label) ---------- */
+label,
+.etiqueta {
+  display: block;            /* en bloque, encima del campo */
+  margin-bottom: 0.3rem;
+  font-weight: 700;          /* negrita */
+  color: #6d5d3c;
+}
+
+/* ---------- Campos ---------- */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid #d3c6a6;
+  border-radius: 6px;
+  background-color: #fffdf8;
+  color: #6d5d3c;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid rgba(47, 93, 80, 0.3);
+  outline-offset: 1px;
+  border-color: #ff00ea;
+}
+
+input:user-invalid {
+  border-color: #9b2c2c;
+}
+
+/* Radios y checkboxes */
+.opciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.5rem;
+}
+
+.opciones label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.opciones input {
+  accent-color: #ff00ea;
+}
+
+/* ---------- Botones ---------- */
+.botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:focus-visible {
+  outline: 3px solid rgba(47, 93, 80, 0.4);
+  outline-offset: 2px;
+}
+
+/* Botón de envío */
+.boton-enviar {
+  border: 1px solid #ff00ea;
+  background-color: #ff00ea;   /* color de fondo */
+  color: #fbf6ea;              /* texto claro, legible */
+}
+
+.boton-enviar:hover {
+  background-color: #1f4338;   /* cambia al pasar el ratón */
+  border-color: #1f4338;
+}
+
+/* Botón de borrado */
+.boton-borrar {
+  border: 1px solid #d3c6a6;
+  background-color: transparent;
+  color: #0091f2;
+}
+
+.boton-borrar:hover {
+  background-color: #cdbe9a;
+}
+
+/* ---------- Móvil ---------- */
+@media (max-width: 480px) {
+  .contenedor {
+    padding: 1.25rem;
+  }
+
+  .botones button {
+    width: 100%;
+  }
+}
