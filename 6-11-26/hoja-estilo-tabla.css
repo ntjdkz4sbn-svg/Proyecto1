@@ -1,0 +1,58 @@
+/* Estilo general de la página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f0;
+  color: #333333;
+  text-align: center;
+  margin: 40px;
+}
+
+/* Título principal */
+h1 {
+  color: #333333;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+/* Tabla */
+table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+/* Título de la tabla */
+caption {
+  background-color: #d6d3cd;
+  color: #333333;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 15px;
+  border: 1px solid #999999;
+  border-bottom: none;
+}
+
+/* Encabezados de la tabla */
+th {
+  background-color: #e5e3df;
+  color: #333333;
+  padding: 15px;
+  border: 1px solid #999999;
+}
+
+/* Celdas */
+td {
+  padding: 15px;
+  border: 1px solid #999999;
+}
+
+/* Filas alternas */
+tbody tr:nth-child(even) {
+  background-color: #f2f1ee;
+}
+
+/* Efecto al pasar el ratón */
+tbody tr:hover {
+  background-color: #dedbd5;
+}

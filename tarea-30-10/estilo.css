@@ -1,5 +1,3 @@
-/* Hoja de estilo – Formulario de inscripción */
-
 * {
   box-sizing: border-box;
 }
@@ -17,12 +15,12 @@ body {
 
 /* ---------- Formulario centrado ---------- */
 .contenedor {
-  max-width: 640px;          /* ancho máximo */
-  margin: 0 auto;            /* centrado horizontal */
-  padding: 2rem;             /* margen interno */
+  max-width: 640px; /* ancho máximo */
+  margin: 0 auto; /* centrado horizontal */
+  padding: 2rem; /* margen interno */
   background-color: #ede7a6;
   border: 1px solid #d3c6a6;
-  border-radius: 12px;       /* bordes redondeados */
+  border-radius: 12px; /* bordes redondeados */
   box-shadow: 0 6px 20px rgba(80, 60, 20, 0.15);
 }
 
@@ -56,12 +54,11 @@ legend {
   margin-bottom: 1.1rem;
 }
 
-/* ---------- Etiquetas (label) ---------- */
 label,
 .etiqueta {
-  display: block;            /* en bloque, encima del campo */
+  display: block;
   margin-bottom: 0.3rem;
-  font-weight: 700;          /* negrita */
+  font-weight: 700; /* negrita */
   color: #6d5d3c;
 }
 
@@ -96,7 +93,7 @@ input:user-invalid {
   border-color: #9b2c2c;
 }
 
-/* Radios y checkboxes */
+/* Radio y checkbox */
 .opciones {
   display: flex;
   flex-wrap: wrap;
@@ -140,12 +137,12 @@ button:focus-visible {
 /* Botón de envío */
 .boton-enviar {
   border: 1px solid #ff00ea;
-  background-color: #ff00ea;   /* color de fondo */
-  color: #fbf6ea;              /* texto claro, legible */
+  background-color: #ff00ea; /* color de fondo */
+  color: #fbf6ea;
 }
 
 .boton-enviar:hover {
-  background-color: #1f4338;   /* cambia al pasar el ratón */
+  background-color: #1f4338; /* cambia al pasar el ratón */
   border-color: #1f4338;
 }
 

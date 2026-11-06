@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mi horario de clase</title>
+    <link rel="stylesheet" href="hoja-estilo-tabla.css" />
+  </head>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    caption {
+      border: 1px solid black;
+      border-bottom: none;
+    }
+  </style>
+  <body>
+    <h1>Horario de clase</h1>
+
+    <table>
+      <caption>
+        Mi horario
+      </caption>
+
+      <thead>
+        <tr>
+          <th>Hora</th>
+          <th>Lunes</th>
+          <th>Martes</th>
+          <th>Miércoles</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th scope="row">8:00 - 9:00</th>
+          <td>Programación</td>
+          <td>Bases de Datos</td>
+          <td>Lenguaje de Marcas</td>
+        </tr>
+
+        <tr>
+          <th scope="row">9:00 - 10:00</th>
+          <td>Bases de Datos</td>
+          <td>Programación</td>
+          <td>Sistemas Informáticos</td>
+        </tr>
+
+        <tr>
+          <th scope="row">10:00 - 11:00</th>
+          <td>Entornos de Desarrollo</td>
+          <td>Lenguaje de Marcas</td>
+          <td>Programación</td>
+        </tr>
+
+        <tr>
+          <th scope="row">11:00 - 11:30</th>
+          <td colspan="3">Recreo</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
